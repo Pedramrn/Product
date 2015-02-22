@@ -40,7 +40,7 @@ class InstallCommand extends Command {
 	{	
 		$source = __DIR__ . '/../Migrations';
 
-		$destiation = $this->laravel['path.database'].'/migrations';
+        $destination = $this->laravel['path.database'].'/migrations';
 
 		$migrationCreator = new MigrationCreator($source, $destination);
 

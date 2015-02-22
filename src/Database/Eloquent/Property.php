@@ -6,7 +6,7 @@ use Jiro\Property\Database\Eloquent\Property as BaseProperty;
 /**
  *  Model for properties.
  *
- *  This class must impliment the appropriate model relationship methods. See docs. 
+ *  This class must implement the appropriate model relationship methods. See docs.
  *
  * @author Andrew McLagan <andrewmclagan@gmail.com>
  */

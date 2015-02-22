@@ -172,7 +172,7 @@ class Product extends Model implements ProductInterface, VariableInterface, Prop
      */
     public function properties()
     {
-        return $this->hasMany('Jiro\Product\Property\EloquentPropertyValue','product_id');
+        return $this->hasMany('Jiro\Product\Property\Eloquent\PropertyValue','product_id');
     }
 
     /** 
@@ -278,7 +278,7 @@ class Product extends Model implements ProductInterface, VariableInterface, Prop
      */
     public function variations()
     {
-        return $this->hasMany('Jiro\Product\Variation\EloquentVariation', 'product_id');
+        return $this->hasMany('Jiro\Product\Variation\Eloquent\Variation', 'product_id');
     }
 
     /**
@@ -325,7 +325,7 @@ class Product extends Model implements ProductInterface, VariableInterface, Prop
     public function options()
     {
         return $this->belongsToMany(
-            'Jiro\Product\Option\EloquentOption',
+            'Jiro\Product\Option\Eloquent\Option',
             'option_product',
             'product_id',
             'option_id'
